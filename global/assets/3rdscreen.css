@@ -1,0 +1,1641 @@
+@import url("flypicons.css");
+/* sic das sind die kachel Gestaltungsklassen*/
+@import url("3rdscreen_styles.css");
+
+#debug {
+	position: absolute;
+	bottom:0;
+	left:0;
+	opacity:0.2;
+}
+body{
+	overflow-y:scroll;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens:auto;
+	hyphens: auto;
+}
+.ownerbody{
+	font-family:Strait, sans-serif;
+	font-size: 18px;
+}
+
+
+
+
+#screen {
+  	width:100%;
+  	margin:auto;
+	position:relative;
+	padding-bottom: 22px;
+}
+
+
+/* ############ classic ######## */
+body.classic {
+	width:100%;
+	max-width:960px;
+	margin:auto
+}
+#module {
+	margin-bottom:12px;
+}
+#tetris {
+	overflow:hidden;
+	margin-top:12px;
+	background-color: #ffffff;
+}
+.tetris_row  {
+  width:320px;
+  float:left; 
+}
+#video {
+	margin-bottom: 15px;
+}
+
+#video, #module{
+	display:none;
+}
+
+
+/*brauchen wir das noch ? aus dem classcic - template*/
+.socialButton, #menubarSocialButtonAcceptText{
+	border-radius:4px;
+	background-color:rgba(255,255,255,0.95);
+}
+
+
+
+/* ############ classic1080 ######## */
+body.classic1080 {
+	max-width: 1080px; 
+	margin: auto;
+}
+body.classic1080 #poweredByFlypSite {
+	max-width:1080px;
+}
+body.classic1080 .tetris_row {
+	width:352px;
+	margin-right:12px;
+	float:left; 
+}
+body.classic1080 .tetris_row:last-child {
+		margin-right:0;
+}
+body.classic1080 .tetris_row .tile,
+body.classic1080 #lightBorder .tile {
+	margin-bottom:12px;
+}
+
+body.classic1080 #banner,
+body.classic1080 #module, 
+body.classic1080 #matrix, 
+body.classic1080 #social,
+body.classic1080 #tetris {
+		margin-top: 12px;
+		width:100%;
+}
+/* ############ classicSignage ######## */
+body.classicSignage {
+	width:100%;
+	max-width:1080px;
+	margin:auto
+}
+body.classicSignage #scaler {
+	background-image: none;
+	max-width: 1080px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -540px;
+	margin-top: -341px;
+}
+body.classicSignage .tile:hover .theComment,
+body.classicSignage .tile .commentcount {
+	display: none;
+}
+body.classicSignage #videoBtn {
+	display:none;
+}
+body.classicSignage #poweredByFlypSite {
+	max-width: 1080px;
+	position: relative;
+}
+body.classicSignage #screen {
+	padding-bottom: 0;
+}
+
+
+/* ############ mobile ######## */
+body.mobile {
+	background-image: none;
+    background-color:white;
+    width:320px;
+}
+body.mobile #banner {}
+body.mobile #videoBtn {
+   	top:-7px;  	
+}
+body.mobile #module {
+	margin-bottom:12px;
+}
+body.mobile #tetris {
+	overflow:hidden;
+	margin-top:12px;
+	background-color: #ffffff;
+}
+body.mobile .tetris_row {
+  width:320px;
+  float:left; 
+}
+body.mobile #poweredByFlypSite {
+	max-width: 320px;
+}
+/* brauchen wir das?
+body.mobile #frame_videotext {
+	display: none;
+}
+body.mobile #frame_mainvideo {
+	width: 320px;
+}*/
+
+body.mobile .white_content {
+  	padding: 0;
+  	top:0;
+  	-webkit-transform: scale(0.85);
+  	-moz-transform: scale(0.85);
+  	-ms-transform: scale(0.85);
+  	-o-transform: scale(0.85);
+  	transform: scale(0.85);
+}
+body.mobile #scrollToTopBtn {
+  	margin-bottom: 2px;
+    padding-right: 0;
+}
+body.mobile .white_contentDummy, 
+body.mobile .white_content,
+body.mobile #light {
+  	width:320px;
+}
+body.mobile #lightBorder {
+	position: absolute; 
+	width: 280px;
+	padding: 16px; 
+	top: 20px;
+}
+body.mobile .overlayCommentsFormContainer #messageCommentForm input[type="text"] {
+	width: 73%;
+}
+
+/* iframe sperrt nicht auf */
+
+div[type="list"] div[layout="iframe"], div[type="list"] div[layout="iframe"] iframe {
+	width: 100% !important;
+	min-height: 250px;
+}
+#column60 div[type="list"] div[layout="iframe"], #column60 div[type="list"] div[layout="iframe"] iframe {
+	min-height: 350px;
+}
+
+
+/* ############ Breiten für Listenclient ######## */
+
+body.twolist{
+	max-width:960px;
+	width:100%;
+	margin:auto;
+}
+body.twolist #menubar { 
+	z-index:1000000;
+	overflow:hidden;
+}
+
+body.twolist #banner {
+	max-width: 960px;
+	width: 100%;
+	margin: auto;
+	z-index: 1002;
+	box-sizing: border-box;
+}
+body.twolist #banner .connect, 
+body.twolist #banner .listCommentCount, 
+body.twolist #banner .theComment { 
+	display: none; 
+	height: 0;
+}	
+
+body.twolist #frame_content, 
+body.twolist #frame_content2, 
+body.twolist .out1_content  {
+	float:left;
+	position:relative;
+	display:none;
+}
+body.twolist .out2_content  {
+	float:right;
+	position:relative;
+	display:none;
+}
+body.twolist #frame_video .tile .nocomment {
+	background-image: none;
+}
+body.twolist .frame, 
+div[type="list"].frame {
+	position:relative;
+	z-index:1;
+}
+
+
+/* nur twolist - video spezifisch im html client */
+#reiterContainer {
+	width: 100%;
+	max-width:960px;
+	position: fixed;
+	top: 0;
+	height: 50px;
+	z-index: 1001;
+}
+
+.reiterkarte {
+	width: 50%;
+	padding: 10px 0;
+	vertical-align: middle;
+	background-color: #fff;	
+	color: #f2ede4;			
+	background: #555a64; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1NWE2NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZjM1NDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  #555a64 0%, #2f3540 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#555a64), color-stop(100%,#2f3540)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #555a64 0%,#2f3540 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #555a64 0%,#2f3540 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #555a64 0%,#2f3540 100%); /* IE10+ */
+	background: linear-gradient(to right,  #555a64 0%,#2f3540 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555a64', endColorstr='#2f3540',GradientType=1 ); /* IE6-8 */	
+}
+.reiterkarte.clickable {
+	color: #c8c8c8;
+}
+.reiterkarte.clickable span {
+	color: #fff;
+}
+.reiterkarte span{
+	padding-left:20px;
+	display: inline-block;			
+}		
+
+
+
+body.list {
+	width:100%;
+	max-width:480px;
+	margin:auto;
+}
+.list #poweredByFlypSite {
+  max-width: 480px;
+}
+
+
+/* ############ Overlay styles ######## */
+#lightBorder {
+	width:640px;
+	background-color:white;
+	padding:30px 40px 30px 40px;
+}
+
+
+#scaler{
+  /*
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+	*/
+}
+
+input[type="text"],
+input[type="submit"] {
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;  
+}
+input[type="submit"] {
+	white-space:nowrap;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-ms-hyphens:none;
+	hyphens: none;
+	cursor:pointer;
+}
+
+a.userhandle {
+	text-decoration: none;
+}
+
+a.hashtag {
+	text-decoration: none;
+}
+
+a.srvlink {
+	text-decoration: none;
+}
+
+#menubar {
+	height:24px;
+	background-color:#000044;
+	font-size:13px;
+	color:white;
+}
+#menubar div {
+	padding:2px 6px 0px 6px;
+}
+#menubarSocialButtons {
+	float: left;
+}
+#menubarLinks {
+	float: right;
+	line-height: 1.6em;
+}
+#menubar a {
+	color:white;
+	text-decoration: none;
+}
+#menubarSocialButtons .serviceicon_twitter:before,
+#menubarSocialButtons .serviceicon_facebook:before,
+#menubarSocialButtons .serviceicon_googleplus:before {
+	font-size:14px;
+	line-height: 1.5em;
+}
+.twoStepSocial{
+	padding: 4px;
+}
+.twoStepSocial:hover, 
+#menubarLinks a:hover {
+	color:rgba(255,255,255,0.8);
+}
+
+
+
+
+#abdecker{
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	background-color:black;
+	z-index:100;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+#overlay{
+	width:900px;
+	top:40px;
+	margin:auto;
+	position:relative;
+	z-index:110;
+}
+
+#overlayCloseButton {
+	width: 93px;
+	height: 93px;
+	background-image: url('/g/assets/overlayClose.png');
+	position: absolute;
+	right: -22px;
+	top: -24px;
+	z-index: 1000;
+}
+#overlaySubstreamMessages {
+	margin-top:12px;
+}
+#overlaySubstreamMessages .tile{
+	margin-top:12px;
+}
+.black_overlay{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+     filter: alpha(opacity=80);
+}
+.white_content {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    top: 30px;
+    width: 720px;    
+    padding: 0px;
+    border: 0px solid orange;
+    background-color: transparent;
+    z-index:1002;
+    overflow: visible;
+}
+.white_contentDummy {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    width: 840px;
+    
+    padding: 16px;
+    border: 0px solid orange;
+    background-color: transparent;
+    z-index:1002;
+    overflow: auto;
+}
+/* ------ im overlaycommentscontainer--------*/
+#overlayCommentsContainer #messages p {
+	font-size:12pt;
+	padding: 15px 15px 10px 15px;
+	border-bottom:1px solid gray;
+}
+#overlayCommentsContainer #messages p span {
+	font-size:12pt;
+	color: #8d8681;
+	display: block;	
+	margin-top: 2px 0 0 0 ;
+}
+#overlayCommentsContainer #messages img {
+	display: none; /*  FIXME */
+}
+#overlayContainer {
+	/*height: 260px;
+	position: absolute;
+	position: fixed;*/ 
+	width: 320px; 
+	overflow: hidden; 
+	float:left;
+	top:56px;
+}
+#overlayCommentsContainer {
+	background-color:white;
+	width:100%;
+	top:0;
+	position: relative;
+	min-height: 180px;
+	float:right;
+}
+.overlayCommentsFormContainer, .eLCommentsFormContainer {
+	padding: 18px 20px 20px 20px;
+	color: #ffffff;
+}
+
+
+/* ------ im eLCommentsContainer--------*/
+#eLCommentsContainer {
+	float: none; 
+	min-height: 0px; 
+	width: auto; 
+	display: block;
+}
+#eLCommentsContainer #eLCommentsFormContainer {
+
+}
+#eLCommentsContainer #messages {
+	margin-bottom: -4px;
+}
+#eLCommentsContainer #messages div {
+	padding: 10px 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	font-size: 14px;
+}
+#eLCommentsContainer #messages div strong {
+	text-transform: uppercase;
+}
+
+.eLCommentCount{
+	height: 13px; 
+	width: 32px; 
+	background-color: #f06d33; 
+	margin: auto; 
+	padding: 0px; 
+	font-size: 12px;
+	color: #fff;
+}
+.eLCommentsContainerClose {
+    font-size: 13px;
+    padding: 5px 20px 30px;
+	margin-bottom:4px;
+}
+.eLCommentsContainerClose span:first-child {
+	font-size:1em;
+	opacity: 0.5;
+	-moz-opacity: 0.5;	
+	float:left;
+	width:32px;
+}
+.eLCommentsContainerClose span:nth-child(2) {
+	padding-left: 5px;
+}
+.eLCommentsContainerClose span:last-child, #noCommentFormClose {
+	font-size: 12px;
+	opacity: 0.5;
+	float: right;
+	width:32px;
+}
+
+
+
+
+/* NEU BEN */
+#overlaySocialstreamContainer span {
+  display:block;
+ /*  color:#8d8681; */
+}
+
+#overlaySocialstreamContainer div {
+  /*border-bottom: 1px solid gray;  
+  padding:10px 0 10px 0;*/
+}
+
+.social {
+	color: #f2ede4; /*beige*/
+}
+.social .tile .info {
+    padding-top: 2px;
+    width: 100%;
+    /* 
+width: 600px;
+    max-width: 600px;
+ */
+    /*padding-bottom:10px;*/
+}
+
+.social .info span.usrhandle {
+	display: inline;
+	padding-left:0.5em;
+}
+
+.usrhandle {
+	display: block;
+}
+
+.raster {
+	border: 0px solid red;
+	position: relative;
+}
+
+.frame {
+	display: block;
+	position: absolute;
+	border: 0px solid blue;
+	overflow:hidden;
+}
+
+/* SERVICE-ICONS */
+.serviceicon {
+	z-index:2;
+	position:absolute;
+	bottom: 0px;
+	right: 15px;
+	width: 20px;
+	height: 16px;
+}
+
+
+.tile {
+	margin:0px;
+}
+
+
+
+/* ################ Kommentarecke ################ */
+.tile .nocomment {
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+  	width: 44px;
+  	height: 44px;
+  	background-image: url(/g/assets/kommentar_plus.png);
+  	z-index: 100;
+  	text-align: right;
+  	font-size: 18px;
+  	padding: 6px 6px 0 0;
+  	color: #fff;
+  	display: none;
+}
+.tile:hover .theComment {
+	display: block;
+}
+.isTouch #screen .theComment {
+	display: block;
+}
+
+
+
+div[type="list"] .tile:hover .theComment,
+.isTouch div[type="list"] .theComment {
+	visibility: hidden;
+}
+.slideshow .slide:hover .theComment {
+	display: none;
+}
+#esocial_frame .theComment {
+	background-image: url(/g/assets/kommentarecke_liste.png);
+	background-repeat:no-repeat;
+}
+
+#banner .theComment, 
+#chatboxdummy .theComment, 
+#esocialstream_frame .theComment, 
+#emodvideo_frame .theComment, 
+#emainvideo_frame .theComment, 
+#emodwide_frame .theComment {
+	visibility:hidden;
+}
+#overlayMessage .theComment,
+#overlayMessage:hover .theComment, 
+#emodwide_frame:hover .theComment,
+.isTouch #overlayMessage .theComment {
+  visibility: hidden;
+}
+.tile .commentcount { 
+	background-image: none;
+	background-image: url(/g/assets/kommentarecke.png);
+}
+#overlayCloseButton {
+	background-image: url(/g/assets/overlayClose.png);
+}
+
+
+
+
+.tile .userImageContainer {
+	height: 70px;
+	width: 70px;
+	border-radius: 35px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	overflow: hidden;
+}
+.tile .userImage {
+	height: 70px;
+	width: auto;
+}
+
+
+.tilecontent {
+	margin:18px 20px 50px 20px;
+}
+
+.mainvideo .tilecontent {
+	margin:0px;
+}
+
+.tile p:first-child {
+	/*padding-top:8px;*/
+}
+
+.tile .text {
+	font-size: 20px;
+}
+.social .tile .text {
+	font-size: 17px;
+}
+.social .tile[layout="postcard_text"] .text {
+	font-size: 17px;
+	padding: 0 20px;
+}
+
+.social .tile[layout="postcard_text"] .transparent_postcard .text, 
+.social .tile[layout="postcard_text"] .transparent_postcard span {
+	padding-top: 10px;
+}
+
+.tile .textbig {
+	font-size: 31px;
+}
+.tile p.text:first-line {
+	/*color: #CB000F;
+	padding-right:40px;*/
+}
+
+.tile .texthuge {
+	font-size: 110px;
+	text-align:center;
+	padding-top:10px;
+}
+
+.tile .headline {
+	font-size: 31px;
+	margin-bottom: 4px;
+}
+div[type="list"] .tile[size_name="double"][layout="teaser"] .headline {
+	padding: 0 20px;
+}
+div[type="list"] .tile[layout="image"] .headline, 
+div[type="list"] .tile[layout="postcard_text"] .headline 
+{
+	padding: 8px 20px 0px 20px;
+}
+.tile .textsmall {
+	font-size: 17px;
+}
+
+.tile .info,
+.tile .link {
+	font-size: 13px;
+	position:absolute;
+	padding-top:20px;
+	bottom:15px;
+	width:100%;	
+}
+.tile[layout="image"] .text {
+  position:absolute;
+  width: 100%;
+}
+
+
+.tile .link .flypicon {
+	font-size: 30px;
+	margin-right:8px;
+	vertical-align:7%;
+	line-height: 10px;
+}
+
+.tile .link a {
+	text-decoration: none;
+}
+
+
+/*###############    für Layout image und postcard ################ */
+span.infoblock {
+	padding: 15px 20px 0px 20px;
+	display: block;
+}
+span.usrhandle {
+	padding: 0px;
+}
+
+.transparent_postcard .text,
+.transparent_postcard span.infoblock {
+	padding: 0px 20px 0px 20px;
+	display: block;
+}
+
+/* das ist css für das postcard_text format im Classic-Client*/
+div#module .tile[layout="postcard_text"] .transparent_postcard .text,
+div#matrix .tile[layout="postcard_text"] .transparent_postcard .text,
+div#tetris .tile[layout="postcard_text"] .transparent_postcard .text {
+	font-size: 16px;
+	height: 30px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+div#module .tile[layout="postcard_text"] .transparent_postcard .text .flypicon,
+div#matrix .tile[layout="postcard_text"] .transparent_postcard .text .flypicon,
+div#tetris .tile[layout="postcard_text"] .transparent_postcard .text .flypicon {
+	font-size: 14px;
+}
+
+/* das muss noch implementiert werden
+Hier muss man noch eine genauere Adressierung ermöglichen 
+div#module .tile[layout="postcard_text"] .transparent_postcard span,
+div#matrix .tile[layout="postcard_text"] .transparent_postcard span,
+div#tetris .tile[layout="postcard_text"] .transparent_postcard span  {
+	padding-top: 5px;
+}
+ */
+
+span.username,
+span.realuserhandle {
+	display:inline;
+	padding:0;
+}
+span.pipe {
+	display: inline;
+	padding:0;
+}
+span.usrhandle {
+	padding:0;
+}
+
+div .tile .info span.realuserhandle, 
+.tile[layout="postcard_text"] .transparent_postcard .realuserhandle  {
+	display:inline;
+}
+
+.transparent .serviceicon,
+.transparent_postcard .serviceicon {
+	bottom: 15px;
+}
+
+.tile[layout="image"] .info, 
+.tile[layout="image"] .text,
+.tile[layout="postcard"] .info, 
+.tile[layout="postcard_text"] .info  {
+	bottom:0px;
+	padding-bottom: 12px;
+}
+
+
+
+
+/*###############    ENDE für Layout image und postcard ################ */
+
+/*###############    für Layout text ################ */
+.tile[layout="text"] .info  span, 
+.tile[layout="text_big"] .info  span,
+.tile[layout="time"] .info  span,
+.tile[layout="text_small"] .info  span,
+.tile[layout="text_link"] .link a,
+.tile[layout="image_link"] .link a {
+	padding: 20px 20px 0px 20px;
+	display: block;
+}
+
+
+
+
+
+.tile .image {
+	/*width:100%;
+	height:!00%;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+  top: 0;
+}
+
+.tile .commentcount {
+	position:absolute;
+	right:0;
+	top:0;
+	width:44px;
+	height:44px;
+	background-image: url('/g/assets/kommentarecke.png');
+	z-index: 100;
+	display:none;
+	text-align: right;
+	font-size: 18px;
+	padding:6px 6px 0 0;
+	color:#fff;
+}
+
+.tile .comment-small {
+	font-size: 14px;
+}
+
+.tile .comment-big {
+	font-size: 20px;
+}
+
+
+#overlayContainer .tile {
+}
+/*cleaout
+#overlayContainer .tile .info {
+	position:relative; /* was absolute
+	padding-bottom:0;
+}
+
+#overlayMessage .serviceicon{
+	right: 15px;
+	bottom:15px;
+}
+*/
+#overlayMessage .tilecontent {
+	padding-bottom: 10px;
+}
+
+
+#overlayContainer .postcard_text.tile .info {
+	position:relative;
+	padding-bottom:15px;
+}
+
+
+
+
+#overlayMessage.image .text {
+	position:relative;
+}
+
+#overlayMessage.image .serviceicon {
+ right: 0;
+ bottom:0;
+}
+#overlayMessage.postcard .serviceicon {
+ right: 15px;
+ bottom: 15px;
+}
+
+
+
+
+
+/* ---------  Übergreifend poll-Styles ------ */
+ul.pollList, 
+ul.pollValues, 
+ul.poll2x2 {
+	margin-top: 5px;
+	font-size: 16px;
+}
+.pollEnabled,
+.pollHilite,
+.pollDisabled {
+	margin-bottom: 3px;
+}
+
+/* --------- poll- Listenansicht nx1 ------ */
+ul.pollList li span:first-child {
+	text-align: center;
+	padding: 5px 3px 5px 3px;
+	min-width: 20px;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	margin-right: 5px;
+}
+ul.pollList li span:nth-child(2) {
+	text-align: right;
+	padding: 5px 3px 0px 3px;
+	min-width: 20px;
+	display: inline-block;
+	margin-right: 5px;
+	float: right;
+	
+}
+/* --------- poll- Walues floatend ------ */
+ul.pollValues .pollEnabled, 
+ul.pollValues .pollHilite, 
+ul.pollValues .pollDisabled {
+	margin-right: 3px;
+	/*min-width: 45px;*/
+	min-width: 30px;
+	padding: 5px;
+	float: left;
+	display: block;
+	text-align: center;
+}
+
+/* --------- poll- 2x2  ------ */
+ul.poll2x2 .pollEnabled, 
+ul.poll2x2 .pollHilite, 
+ul.poll2x2 .pollDisabled {
+	margin-right: 3px;
+	width: 45.3%;
+	float: left;
+	display: block;
+}
+ul.poll2x2 li span:first-child {
+	text-align: center;
+	padding: 5px 3px 5px 3px;
+	min-width: 20px;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	margin-right: 5px;
+}
+
+ul.poll2x2 li span:nth-child(2) {
+	text-align: right;
+	padding: 5px 3px 5px 3px;
+	min-width: 20px;
+	display: inline-block;
+	margin-right: 5px;
+	float: right;
+	
+}
+
+.pollRueckmeldung {
+	font-size: 16px;
+	margin-top: 5px;
+	clear:both;
+}
+
+.pollErgebnisBig {
+	font-size: 70px;
+	text-align: center;
+	margin-top:0px;
+	/*position: absolute;*/
+	bottom: 5px;
+}
+
+
+
+
+/* --------- der teaser-container ------ */
+/* --------- der teaser-container base. nebeneinander. ------ */
+div[size_name="base"] .teaserTextContainer {
+  width:50%;
+  height:100%;
+  background-image: url(/g/assets/icons/link_weiss_trans.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+div[size_name="base"] .teaserText {
+  padding:20px 10px 20px 20px;
+}
+div[size_name="base"].tile .teaserText .headline{
+  font-size:20px;
+}
+div[size_name="base"].tile .teaserText .text{
+  font-size:16px;
+}
+div[size_name="base"] .teaserImage {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+}
+
+/* --------- der teaser-container double. Teaser untereinander ------ */
+div[size_name="double"] .teaserTextContainer {
+  width:100%;
+  height:50%;
+  position: absolute;
+  bottom: 0;
+  background-image: url(/g/assets/icons/link_weiss_trans.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+div[size_name="double"] .teaserText {
+  padding:15px;
+}
+div[size_name="double"] .teaserImage {
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+
+/* im overlay: */
+#overlayMessage .teaserTextContainer {
+	margin: 18px 20px 20px 20px;
+}
+/* --------- ENDE der teaser-container ------ */
+
+
+
+.triangle-topright {
+	position:absolute;
+	right:0;
+	top:0;
+	width: 0;
+	height: 0;
+	border-top: 20px solid red;
+	border-left: 20px solid transparent;
+	font-size:10px;
+}
+
+
+
+/*
+#messageCommentForm {
+	height:50px;
+	padding:18px 20px 20px;
+}
+*/
+#messageCommentForm {
+	position:relative;
+}
+.topleft, .bottomright {
+	
+}
+
+
+/* helferlein */
+.dn {
+  display:none;
+}
+.fr {
+  float:right;
+}
+
+.fl {
+  float:left;
+}
+
+.cptr {
+	cursor: pointer;
+}
+.ch {
+	cursor: help;
+}
+.cb {
+	clear:both;
+}
+/* ################ VideoButton für alte Classic Events ################ */
+#videoBtn {
+	position:absolute;
+	top:0px;
+	right: 0px;
+	width: 230px;
+	height: 90px;
+	background-image: url(/g/assets/livevideoButton.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	z-index:100;
+	cursor:pointer;
+}
+.mobile #videoBtn {
+	height: 60px;
+	background-image: url(/g/assets/livevideoButtonMobile.png);
+	top:0px;
+}
+#videoBtn:hover {background-position: right bottom;}
+#videoBtn[state="closed"] { background-position: left top;}
+#videoBtn[state="closed"]:hover { background-position: left bottom;}
+#videoBtn[state="open"] { background-position: right top;}
+#videoBtn[state="open"]:hover { background-position: right bottom;}
+
+/* ################ VideoButton für alte Twolist Events ################ */
+#theVidBut {
+	color:white;
+	position:absolute;
+	cursor:pointer;
+	z-index:9999;
+	bottom:10px;
+	right:10px;
+	display:block
+} 
+#theVidBut:before{
+	content:'Video +/-';
+}
+
+
+
+/* ################ VideoButton NEU für Liste und Classic 30.7.15 ################ */
+#showHideVideo {
+	position:absolute;
+	bottom:10px;
+	right: 10px;
+	color:rgba(255,255,255,0.8);
+	z-index:100;
+	cursor:pointer;
+}
+#showHideVideo[state="closed"]:before { content:'Video einblenden';}
+#showHideVideo[state="closed"]:hover { color:#fff;}
+#showHideVideo[state="open"]:before { content:'Video ausblenden';}
+#showHideVideo[state="open"]:hover { color:#fff;}
+
+.mobile #showHideVideo {
+	height: 60px;
+	background-image: url(/g/assets/livevideoButtonMobile.png);
+	top:0px;
+}
+
+
+
+
+.ws_darkgreen {background-color: #1F871B;}
+.ws_red {background-color: darkred;}
+.ws_lightblue {background-color: #B6CDF2;}
+.ws_transparent {background-color: transparent;}
+
+#backToTs {
+	position: absolute;
+	z-index: 2;
+	right: 10px;
+	top: 10px;
+	width:200px;
+	text-align:right;
+}
+#backToTs a {
+	font-size: 14px;
+	text-decoration:none;
+	color: white;	
+}
+
+
+/* FIXME */
+#esocial_frame.tile.plain {
+	background-color: #001a4b;
+	color: #fff;
+}
+#esocialstream_frame .info {
+    padding-top: 2px;
+}
+#esocialstream_frame .info span.usrhandle {
+	display: inline;
+	padding-left:1em;
+}
+
+
+.twimg {
+  display:inline-block;
+  background-color:transparent;
+  background-image:url(/g/assets/twbut/sprite_mod.png);   
+  margin:0px 2px 6px 2px;   
+  vertical-align:middle;
+  overflow:hidden;
+}
+
+.twimg:hover {
+  /*background-color:#5CC5FB;*/
+} 
+
+.tw_reply {
+  /*background-position:0px -114px; */
+  background-position:95px -82px;
+  width:20px;
+  height:20px;    
+} 
+
+.tw_retweet {
+  /*background-position:-31px -114px;*/
+  background-position:95px -100px;
+  width:22px;
+  height:20px;    
+} 
+
+.tw_fav {
+  /*background-position:-60px -114px;*/
+  background-position:95px -120px;
+  width:17px;
+  height:20px;    
+}
+
+.tw_reply:hover {
+  /*background-position:0px -114px; */
+  background-position:72px -82px;  
+} 
+
+.tw_retweet:hover {
+  /*background-position:-31px -114px;*/
+  background-position:68px -100px;  
+} 
+
+.tw_fav:hover {
+  /*background-position:-60px -114px;*/
+  background-position:74px -120px;  
+}
+
+#poweredByFlypSite {
+  width: 100%;
+  max-width: 960px;
+  height: 22px;
+  position: fixed;
+  bottom: 0px;
+  background: #232831;
+  background: rgba(20, 14, 38, 0.8);
+  z-index: 999;
+  text-align: center;
+  background-image: url(/g/assets/poweredByFlypSite.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#poweredByFlypSite .flypicon { 
+	display:none;
+}
+#poweredByFlypSite a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#poweredByFlypSite div.flypicon{
+	display:none;
+}
+
+
+/* ############# FIX ME ########### */
+
+
+#overlayMessage.image, 
+#overlayMessage.postcard_text
+#overlayMessage.postcard {
+	visibility: hidden;
+}
+/* ############# FIX ME ########### */
+
+
+
+
+/* ---------- Embedded List Client ------- */
+
+div[type="list"]#frame {
+	position:relative;
+}
+
+div[type="list"] .tilecontent {
+	margin: 18px 20px 5px 20px;
+}
+div[type="list"] #chatboxdummy .tilecontent {
+	margin: 18px 20px 18px 20px;
+}
+
+div[type="list"] .tile[layout="image"] .tilecontent, 
+div[type="list"] .tile[layout="postcard"] .tilecontent, 
+div[type="list"] .tile[layout="postcard_text"] .tilecontent {
+	display:none;
+}
+
+
+div[type="list"] .tile[layout="postcard"] .info, 
+div[type="list"] .tile[layout="postcard_text"] .info {
+	bottom: 24px;
+	padding-bottom: 0px;
+}
+
+div[type="list"] .tile[layout="image"] .info, 
+div[type="list"] .tile[layout="image"] .text {
+	bottom: 20px;
+	padding-bottom: 12px;
+	width:100%;
+	position: relative;
+}
+div[type="list"] .tile .text {
+	margin-bottom: 10px;
+}
+
+div[type="list"] .tile .info,
+div[type="list"] .tile .link {
+	position: relative;
+	width: 100%;
+	bottom: 0;	
+	padding-top:0px;
+	/*margin-top: 15px;*/
+	clear:both;
+}
+div[type="list"] .tile .link {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+div[type="list"] .serviceicon {
+	bottom:5px;
+}
+div[type="list"] .connect {
+	margin-top: -18px;
+	text-align: left;	
+}
+
+div[type="list"] .connect .flypiconConnect {
+	height: 18px;
+	width: 60px;
+	left: 20px;
+	z-index: 900;
+	position: relative;
+	margin-bottom:15px;
+	overflow:hidden;
+	margin-bottom: 35px;
+}
+div[type="list"] .commentcount {
+	visibility:hidden;
+}
+.tile[layout="image"] .listCommentCount, 
+.tile[layout="postcard"] .listCommentCount,
+.tile[layout="postcard_text"] .listCommentCount{
+	position: absolute;
+	bottom: 3px;
+}
+
+div[type="list"] span.infoblock {
+	padding: 10px 20px 0px 20px;
+	padding: 0px 20px 0px 20px;
+	display: block;
+}
+div[type="list"] .tile[layout="text_link"] .link a,
+div[type="list"] .tile[layout="image_link"] .link a {
+	padding:0;
+}
+
+div[type="list"] .usrhandle {
+	padding: 0 15px 0 0;
+}
+
+
+
+.listCommentCount {
+	height: 16px; 
+	width: 100%; 
+	z-index: 100; 
+	text-align: center;
+	padding-top: 5px;
+	clear: both; 
+}
+.listCommentCount div.flypicon{
+	font-size: 12px;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	width:32px;
+	vertical-align: 150%;
+}
+
+
+.nocomment .eLCommentCount, 
+.nocomment .listCommentCount .flypicon,
+.nocomment div[layout="video"] .listCommentCount,
+.nocomment div[layout="slideshow"] .listCommentCount, 
+.nocomment div[layout="image"] .listCommentCount{
+	display:none;
+}
+.nocomment.frame.chat {
+	display:none;
+}
+.nocomment .listCommentCount{
+	height: 10px; 
+}
+
+div[type="list"].nocomment p.text.transparent{
+	bottom:0; 
+	padding-bottom:20px;
+}
+div[type="list"].nocomment .tile[layout="postcard"] .info, 
+div[type="list"].nocomment .tile[layout="postcard_text"] .info {
+	bottom: 18px;
+}
+
+
+
+body.twolist{
+	max-width:960px;
+	width:100%;
+	margin:auto;
+}
+body.list {
+	width:100%;
+	max-width:960px;
+	margin:auto;
+}
+.list #poweredByFlypSite {
+  	max-width: 960px;
+}
+
+/* ############ Reiter Styles für twolist-client ######## */
+
+body.twolist #screen {
+	width: 100%;
+/*	top: 50px; */
+}
+#reiterContainer {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 50px;
+	z-index: 1001;
+	max-width:960px;
+}
+.twolist #frame_content, 
+.twolist #frame_content2, 
+.twolist .out1_content  {
+	float:left;
+	position:relative;
+	display:none;
+}
+
+.twolist .out2_content  {
+	float:right;
+	position:relative;
+	display:none;
+}
+
+.twolist .frame, div[type="list"].frame {
+	position:relative;
+	z-index:1;
+}
+
+.reiterkarte {
+	width: 50%;
+	padding: 10px 0;
+	vertical-align: middle;
+	background-color: #fff;	
+	color: #f2ede4;			
+	background: #555a64; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1NWE2NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZjM1NDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  #555a64 0%, #2f3540 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#555a64), color-stop(100%,#2f3540)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #555a64 0%,#2f3540 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #555a64 0%,#2f3540 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #555a64 0%,#2f3540 100%); /* IE10+ */
+	background: linear-gradient(to right,  #555a64 0%,#2f3540 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555a64', endColorstr='#2f3540',GradientType=1 ); /* IE6-8 */	
+}
+.reiterkarte span{
+	padding-left:20px;
+	display: inline-block;			
+}		
+
+
+
+
+
+
+/* ############ SLIDESHOW ######## */
+.slideshow {
+	/*background-color: lime;*/
+	/*display: none;*/
+}
+
+.slideshow a.slidesjs-navigation {
+    background-image: url("/g/assets/slideshow/slides_prev_next.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 41px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    z-index: 100;
+}
+
+.slideshow a.prev {
+    background-position: 0 0;
+    left: 0;
+}
+
+.slideshow a.next {
+    background-position: -30px 0;
+    right: 0;
+}
+
+.slideshow a.prev:hover {
+    background-position: 0 -41px;
+    left: 0;
+}
+
+.slideshow a.next:hover {
+    background-position: -30px -41px;
+    right: 0;
+}
+
+
+.slidesjs-next , .slidesjs-previous{
+	position: absolute;
+	z-index: 666;
+	bottom: 0;
+}
+
+.slidesjs-next {
+	right: 0;
+}
+
+.slidesjs-previous{
+	left: 0;
+}
+
+.slideshow .headline {
+	/*margin: 18px 20px 0px*/
+}
+
+
+
+/* ############ SLIDESHOW ######## */
+
+.w100p {
+	width:100%;
+}
+/******** system stuff ****/
+#noscript h1,
+#noscript h2,
+#noscript h3 {
+	padding:0 0 30px 0;
+	font-weight: 400;
+}
+#noscript h1 {
+	font-size: 31px;
+}
+#noscript h2 {
+	font-size: 20px;
+}
+#noscript{
+	background:#dddddd; 
+	margin:40px auto;
+	zoom: 1;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	padding:20px;
+	line-height: 1.4em;
+}
+#noscript .italic {
+	font-style: italic;
+	margin-top: 20px;
+}
+#noscriptMessages .message {
+	border: 1px solid #ccc;
+	border-bottom:0;
+	padding:  20px;
+}
+#noscriptMessages .message:last-child {
+	border: 1px solid #ccc;
+	border-bottom:0;
+	padding:  20px;
+}
+#noscriptMessages .headline {
+	font-size: 31px;
+	margin-bottom: 4px;
+}
+#noscriptMessages .text {
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+#noscriptMessages .user {
+	font-size: 14px;
+}
+#noscriptMessages a {
+	color:#006bb6;
+	padding: 0 5px;
+}

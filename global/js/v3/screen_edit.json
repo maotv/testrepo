@@ -1,0 +1,211 @@
+{
+
+	"screen": [
+	
+		{
+			"name": "main",
+			"width": 0,
+			"height": 0,
+			
+			"sizes": {
+				"base":   { "width": 320, "height": 180 },
+				"double": { "width": 320, "height": 360 },
+				"grande": { "width": 640, "height": 360 },
+				"short4": { "width": 640, "height": 90 }
+			},
+
+			"positions": {
+	      "A1": { "x": 0, "y": 0 }, "B1": { "x": 80, "y": 0 }, "C1": { "x": 160, "y": 0 }, "D1": { "x": 240, "y": 0 }, "E1": { "x": 320, "y": 0 }, "F1": { "x": 400, "y": 0 }, "G1": { "x": 480, "y": 0 }, "H1": { "x": 560, "y": 0 }, "I1": { "x": 640, "y": 0 }, "J1": { "x": 720, "y": 0 }, "K1": { "x": 800, "y": 0 }, "L1": { "x": 880, "y": 0 }, "M1": { "x": 960, "y": 0 }, 
+				"A2": { "x": 0, "y": 90 }, "B2": { "x": 80, "y": 90 }, "C2": { "x": 160, "y": 90 }, "D2": { "x": 240, "y": 90 }, "E2": { "x": 320, "y": 90 }, "F2": { "x": 400, "y": 90 }, "G2": { "x": 480, "y": 90 }, "H2": { "x": 560, "y": 90 }, "I2": { "x": 640, "y": 90 }, "J2": { "x": 720, "y": 90 }, "K2": { "x": 800, "y": 90 }, "L2": { "x": 880, "y": 90 }, "M2": { "x": 960, "y": 90 }, 
+				"A3": { "x": 0, "y": 180 }, "B3": { "x": 80, "y": 180 }, "C3": { "x": 160, "y": 180 }, "D3": { "x": 240, "y": 180 }, "E3": { "x": 320, "y": 180 }, "F3": { "x": 400, "y": 180 }, "G3": { "x": 480, "y": 180 }, "H3": { "x": 560, "y": 180 }, "I3": { "x": 640, "y": 180 }, "J3": { "x": 720, "y": 180 }, "K3": { "x": 800, "y": 180 }, "L3": { "x": 880, "y": 180 }, "M3": { "x": 960, "y": 180 }, 
+				"A4": { "x": 0, "y": 270 }, "B4": { "x": 80, "y": 270 }, "C4": { "x": 160, "y": 270 }, "D4": { "x": 240, "y": 270 }, "E4": { "x": 320, "y": 270 }, "F4": { "x": 400, "y": 270 }, "G4": { "x": 480, "y": 270 }, "H4": { "x": 560, "y": 270 }, "I4": { "x": 640, "y": 270 }, "J4": { "x": 720, "y": 270 }, "K4": { "x": 800, "y": 270 }, "L4": { "x": 880, "y": 270 }, "M4": { "x": 960, "y": 270 }, 
+				"A5": { "x": 0, "y": 360 }, "B5": { "x": 80, "y": 360 }, "C5": { "x": 160, "y": 360 }, "D5": { "x": 240, "y": 360 }, "E5": { "x": 320, "y": 360 }, "F5": { "x": 400, "y": 360 }, "G5": { "x": 480, "y": 360 }, "H5": { "x": 560, "y": 360 }, "I5": { "x": 640, "y": 360 }, "J5": { "x": 720, "y": 360 }, "K5": { "x": 800, "y": 360 }, "L5": { "x": 880, "y": 360 }, "M5": { "x": 960, "y": 360 }, 
+				"A6": { "x": 0, "y": 450 }, "B6": { "x": 80, "y": 450 }, "C6": { "x": 160, "y": 450 }, "D6": { "x": 240, "y": 450 }, "E6": { "x": 320, "y": 450 }, "F6": { "x": 400, "y": 450 }, "G6": { "x": 480, "y": 450 }, "H6": { "x": 560, "y": 450 }, "I6": { "x": 640, "y": 450 }, "J6": { "x": 720, "y": 450 }, "K6": { "x": 800, "y": 450 }, "L6": { "x": 880, "y": 450 }, "M6": { "x": 960, "y": 450 }, 
+				"A7": { "x": 0, "y": 540 }, "B7": { "x": 80, "y": 540 }, "C7": { "x": 160, "y": 540 }, "D7": { "x": 240, "y": 540 }, "E7": { "x": 320, "y": 540 }, "F7": { "x": 400, "y": 540 }, "G7": { "x": 480, "y": 540 }, "H7": { "x": 560, "y": 540 }, "I7": { "x": 640, "y": 540 }, "J7": { "x": 720, "y": 540 }, "K7": { "x": 800, "y": 540 }, "L7": { "x": 880, "y": 540 }, "M7": { "x": 960, "y": 540 }, 
+				"A8": { "x": 0, "y": 630 }, "B8": { "x": 80, "y": 630 }, "C8": { "x": 160, "y": 630 }, "D8": { "x": 240, "y": 630 }, "E8": { "x": 320, "y": 630 }, "F8": { "x": 400, "y": 630 }, "G8": { "x": 480, "y": 630 }, "H8": { "x": 560, "y": 630 }, "I8": { "x": 640, "y": 630 }, "J8": { "x": 720, "y": 630 }, "K8": { "x": 800, "y": 630 }, "L8": { "x": 880, "y": 630 }, "M8": { "x": 960, "y": 630 }, 
+				"A9": { "x": 0, "y": 720 }, "B9": { "x": 80, "y": 720 }, "C9": { "x": 160, "y": 720 }, "D9": { "x": 240, "y": 720 }, "E9": { "x": 320, "y": 720 }, "F9": { "x": 400, "y": 720 }, "G9": { "x": 480, "y": 720 }, "H9": { "x": 560, "y": 720 }, "I9": { "x": 640, "y": 720 }, "J9": { "x": 720, "y": 720 }, "K9": { "x": 800, "y": 720 }, "L9": { "x": 880, "y": 720 }, "M9": { "x": 960, "y": 720 }, 
+				"A10": { "x": 0, "y": 810 }, "B10": { "x": 80, "y": 810 }, "C10": { "x": 160, "y": 810 }, "D10": { "x": 240, "y": 810 }, "E10": { "x": 320, "y": 810 }, "F10": { "x": 400, "y": 810 }, "G10": { "x": 480, "y": 810 }, "H10": { "x": 560, "y": 810 }, "I10": { "x": 640, "y": 810 }, "J10": { "x": 720, "y": 810 }, "K10": { "x": 800, "y": 810 }, "L10": { "x": 880, "y": 810 }, "M10": { "x": 960, "y": 810 }, 
+				"A11": { "x": 0, "y": 900 }, "B11": { "x": 80, "y": 900 }, "C11": { "x": 160, "y": 900 }, "D11": { "x": 240, "y": 900 }, "E11": { "x": 320, "y": 900 }, "F11": { "x": 400, "y": 900 }, "G11": { "x": 480, "y": 900 }, "H11": { "x": 560, "y": 900 }, "I11": { "x": 640, "y": 900 }, "J11": { "x": 720, "y": 900 }, "K11": { "x": 800, "y": 900 }, "L11": { "x": 880, "y": 900 }, "M11": { "x": 960, "y": 900 },
+				"A12": { "x": 0, "y": 540 }, "B12": { "x": 80, "y": 900 }, "C12": { "x": 160, "y": 900 }, "D12": { "x": 240, "y": 900 }, "E12": { "x": 320, "y": 900 }, "F12": { "x": 400, "y": 900 }, "G12": { "x": 480, "y": 900 }, "H12": { "x": 560, "y": 900 }, "I12": { "x": 640, "y": 900 }, "J12": { "x": 720, "y": 900 }, "K12": { "x": 800, "y": 900 }, "L12": { "x": 880, "y": 900 }, "M12": { "x": 960, "y": 900 }
+			}
+		
+		}
+	],
+	
+	   
+	"frames": {
+		"topleft":      {"raster": "main", "position":  "A1", "size": "double", "color": "#c0c0c0", "reuse": true },
+		"bottomleft":   {"raster": "main", "position":  "A5", "size": "base", "color": "#c0c0c0" },
+		"topcenter":    {"raster": "main", "position":  "E1", "size": "base", "color": "#c0c0c0" },
+		"center":       {"raster": "main", "position":  "E3", "size": "base", "color": "#c0c0c0" },
+		"bottomcenter": {"raster": "main", "position":  "E5", "size": "base", "color": "#c0c0c0" },
+		"topright":     {"raster": "main", "position":  "I1", "size": "base", "color": "#c0c0c0" },
+		"bottomright":  {"raster": "main", "position":  "I3", "size": "double", "color": "#c0c0c0" },
+		"socialstream": {"raster": "main", "position":  "A12", "size": "short4", "color": "#555a64" }
+		
+	},
+	
+	
+	
+	
+	"data": [
+		{ "revision": 1, 
+			"stream": "main", 
+			"index": "1252", 
+			"action": "add", 
+			"message": 
+			{ 
+				"user": 
+				{ 
+					"name": "Rebecca Knauth", 
+					"handle": "@maoam", 
+					"link": "https://twitter.com/@maoam", 
+					"image": "https://twimg0-a.akamaihd.net/profile_images/100299323/PHOTO-2008-0032-0005_bigger.jpg",
+					"service": "twitter"
+				}, 
+				"headline": "Hach, ist das toll hier!", 
+				"info": "Ich habe auch einen Infotext...", 
+				"frame": "topright", 
+				"layout": "postcard", 
+				"color": "#7881d0", 
+				"style": "c6",  
+				"text": "IMAGE Der Saal glänzt. Und der Text ist auch etwas länger als gedacht.",
+				"mediatype": "image",
+				"mediaurl": "http://fotografirma.smugmug.com/photos/i-c542krm/2/S/i-c542krm-S.jpg",
+				"link": "http://bigbasspic.de"
+			}
+		},
+		
+		{ 
+			"revision": 1, "stream": "main", "index": "1252", "action": "add", "message": 
+			{ 
+				"user": 
+				{ 
+					"name": "Mao Am",
+					"handle": "@image link",
+					"link": "https://twitter.com/@maoam",
+					"image": "https://twimg0-a.akamaihd.net/profile_images/100299323/PHOTO-2008-0032-0005_bigger.jpg",
+					"service": "twitter"
+				}, 
+					"headline": "dk fdkj fk jdf jkdf jkjk ",
+					"info": "infotext hier. ",
+					"frame": "bottomleft",
+					"layout": "image",
+					"color": "#73d232",
+					"style": "c1",
+					"text": "IL: zum abschied: eine stimme für meinen fitness-studio-kollegen gudi guttenberg, der sich übrigens ganz gut auf den abgang vorbereitet hat",
+					"mediatype": "image",
+					"mediaurl": "http://fotografirma.smugmug.com/photos/i-N2wDSgB/1/S/i-N2wDSgB-S.jpg",
+					"link": "http://bigbasspic.de"
+			}
+		},
+		{ 
+			"revision": 1, 
+			"stream": "main", 
+			"index": "1252", 
+			"action": "add", 
+			"message": 
+			{ 
+				"user": 
+				{ 
+					"name": "Mao Am", 
+					"handle": "@maoam", 
+					"link": "https://twitter.com/@maoam", 
+					"image": "https://twimg0-a.akamaihd.net/profile_images/100299323/PHOTO-2008-0032-0005_bigger.jpg" 
+				}, 
+				"headline": "Head. Line.", 
+				"info": "bitte clicken!", 
+				"frame": "center", 
+				"layout": "text_link", 
+				"color": "#1d6681", 
+				"style": "c3", 
+				"text": "LINK: verabschiede mich und rufe: Uff die goldisch #Meenz-er #Fastnacht ein dreifach donnerndes Helauuu! #MainzbleibtMainz #MbM.",
+				"link": "http://bigbasspic.de"
+			}
+		},
+
+		{ "revision": 1, 
+			"stream": "main", 
+			"index": "1252", 
+			"action": "add", 
+			"message": 
+			{ 
+				"user": 
+				{ 
+					"name": "Rebecca Knauth", 
+					"handle": "@image", 
+					"link": "https://twitter.com/@maoam", 
+					"image": "https://twimg0-a.akamaihd.net/profile_images/100299323/PHOTO-2008-0032-0005_bigger.jpg",
+					"service": "twitter"
+				}, 
+				"headline": "", 
+				"info": "", 
+				"frame": "topright", 
+				"layout": "postcard", 
+				"color": "#7881d0", 
+				"style": "c6",  
+				"text": "IMAGE Der Saal glänzt.",
+				"link": "http://bigbasspic.de",
+				"mediatype": "image",
+				"mediaurl": "http://fotografirma.smugmug.com/photos/i-c542krm/2/S/i-c542krm-S.jpg"
+			}
+		},
+		
+		{ 
+			"revision": 1, 
+			"stream": "main", 
+			"index": "1252", 
+			"action": "add", 
+			"message": 
+			{ 
+				"user": 
+				{ 
+					"name": "Mao Am", 
+					"handle": "@maoam", 
+					"link": "https://twitter.com/@maoam", 
+					"image": "https://twimg0-a.akamaihd.net/profile_images/100299323/PHOTO-2008-0032-0005_bigger.jpg" 
+				}, 
+				"headline": "", 
+				"info": "bitte klicken!!!", 
+				"frame": "bottomcenter", 
+				"layout": "image_link", 
+				"color": "#3b7e6e", 
+				"style": "c5", 
+				"text": "Vielen Dank!",
+				"mediatype": "image",
+				"mediaurl": "http://fotografirma.smugmug.com/photos/i-N2wDSgB/1/S/i-N2wDSgB-S.jpg",
+				"link": "http://bigbasspic.de"
+			}
+		},
+
+		{ 
+			"revision": 1, 
+			"stream": "main", 
+			"index": "1252", 
+			"action": "add", 
+			"message": 
+			{ 
+				"user": 
+				{ 
+					"name": "Mao Am", 
+					"handle": "@maoam", 
+					"link": "https://twitter.com/@maoam", 
+					"image": "https://twimg0-a.akamaihd.net/profile_images/100299323/PHOTO-2008-0032-0005_bigger.jpg" 
+				}, 
+				"headline": "Head. Line. Top. Left.",
+				"info": "infotext hier. kann auch länger sein, der infottext. sogar mehr als 2 zeilen, wenn man denn genug kappes da rein schreibt!",
+				"frame": "topleft", 
+				"layout": "text_big", 
+				"color": "#112e09", 
+				"style": "c2", 
+				"text": "Wenn einem nix einfällt, sollte man seine Zeit nicht vergeuden! Wenn einem nix einfällt, sollte man seine Zeit nicht vergeuden! Wenn einem nix einfällt, sollte man seine Zeit nicht vergeuden! Wenn einem nix einfällt, sollte man seine Zeit nicht vergeuden!",
+				"link": "http://bigbasspic.de"
+			}
+		},
+        { "revision": 1, "stream": "main", "index": "1252", "action": "add", "message": { "user": { "name": "Mao Am", "handle": "@maoam", "link": "https://twitter.com/@maoam", "image": "https://twimg0-a.akamaihd.net/profile_images/100299323/PHOTO-2008-0032-0005_bigger.jpg" }, "headline": "", "info": "", "frame": "bottomright", "layout": "text", "color": "#9622a7", "style": "c7", "text": "@GEisold @tabearoessner Es wird Politik begrüßt, weil Fastnacht politisch ist"}}
+        
+		
+	]
+	
+	
+}

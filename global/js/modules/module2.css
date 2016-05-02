@@ -1,0 +1,137 @@
+/* ##############################
+minimal flypcontainer styles 
+################################# */
+
+
+ul.flypContainer  { 
+margin: 0;
+padding: 0;
+border: 0;
+}
+		
+.flypParent {
+font-family: Helvetica, Arial, Verdana, sans;
+background:transparent;
+word-wrap: break-word;
+overflow:hidden;
+position:relative;
+top: 0px;
+left: 0;
+width:100%;
+height: 100%;
+}
+
+.mobile .flypParent {
+top:0;
+left:0px;
+width:100%;
+height: 100%;
+}
+.flypContainer {
+width:100%;
+height:100%;
+}
+
+.flypContainer a {
+text-decoration: none;
+color: #e20026;;
+}
+
+.flypContainer p {
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+}
+.flypContainer ul {
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+width:100%;
+list-style:none;
+line-height:1;
+background-color:#000;
+}
+.flypContainer li {
+list-style-type:none;
+list-style-position:inside;
+background-color:#c67;
+width:100%;
+height:100%;
+overflow:hidden;
+color:#fff;
+color:rgba(255,255,255,0.95);
+display:block;
+visibility: hidden;
+}
+.flypContainer li > * {
+overflow:hidden;
+display:block;
+}
+.flypContainer li content {
+border-top:1px solid rgba(255,255,255,0.2);
+display:block;
+font-size:10em;
+line-height:1.1em;
+text-align:center;
+}
+.flypContainer li content p {
+margin:0.6em;
+}
+.flypContainer li content img {
+width:100%;
+height:100%;
+}
+.flypContainer li header p, .flypContainer li footer p {
+width:96%;
+height:96%;
+padding:2%;
+display:block;
+}
+.flypContainer li header p > *, .flypContainer li footer p > *{
+float:left;
+display:inline;
+margin:0;
+line-height:1.1em;
+}
+.flypContainer li header p img, .flypContainer li footer p img {
+height:2.2em;
+width: auto !important;
+margin-right:2%;
+border-radius:50%;
+}
+.flypContainer li * p span.name,.flypContainer li * p span.handle {
+font-weight:700;
+}
+.flypContainer li * p span.time,.flypContainer li * p span.service {
+padding-right:.5em;
+float:right;
+}
+.flypContainer li * p span.flypiconBig {
+float:right;
+width:10%;
+}
+.flypContainer li * p span.flypiconBig:before {
+font-size:inherit;
+}
+.flypContainer li * p span.handle:before {
+}
+.flypContainer li * p span.name{
+padding-right:0.6em;
+}
+.flypContainer li * p span.service:before {
+content:"via";
+padding:0 5px;
+}
+.flypContainer li {
+background: #000000;
+background: rgba(0,0,0,0.7);
+}
+/*
+.flypContainer .s1, .flypContainer .s5, .flypContainer .e1, .flypContainer .e5, .flypContainer .s2, .flypContainer .s6, .flypContainer .e2, .flypContainer .e6, .flypContainer .s3, .flypContainer .s7, .flypContainer .e3, .flypContainer .e7, .flypContainer .s4, .flypContainer .s8, .flypContainer .e4, .flypContainer .e8 {
+    background-color:#ebebeb;
+    color:#7c7c7c;    
+}
+*/

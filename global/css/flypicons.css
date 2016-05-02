@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'flypicons';
+  src: url('font/flypicons.eot?5478622');
+  src: url('font/flypicons.eot?5478622#iefix') format('embedded-opentype'),
+       url('font/flypicons.woff?5478622') format('woff'),
+       url('font/flypicons.ttf?5478622') format('truetype'),
+       url('font/flypicons.svg?5478622#flypicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*_____________________________*/
+/*___frontend flypicon font____*/
+/*_____________________________*/
+
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'flypicons';
+    src: url('font/flypicons.svg?5478622#flypicons') format('svg');
+  }
+}
+*/
+ 
+.flypicon, 
+.flypiconBig, 
+.flypicon18,
+.flypicon25,
+[class^="icon-"]:before, 
+[class*=" icon-"]:before, 
+[class^="serviceicon_"]:before, 
+[class*=" serviceicon_"]:before {
+  font-size: 19px;
+  font-family: "flypicons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+   
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed 
+  margin-left: .2em;
+  margin-right: .2em;*/
+  
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  cursor: pointer;
+}
+
+
+
+ 
+.flypiconBig,
+.flypiconBig:before {
+ 	font-size: 32px;
+ }
+  .flypicon18 {
+ 	font-size: 18px;
+ }
+  .flypicon25 {
+ 	font-size: 25px;
+ }
+ 
+
+
+.icon-flypsite:before { content: '\46'; } /* 'F' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-instagram:before { content: '\49'; } /* 'I' */
+.icon-googleplus:before { content: '\67'; } /* 'g' */
+.icon-mail:before { content: '\6d'; } /* 'm' */
+.icon-video:before { content: '\76'; } /* 'v' */
+.icon-wwwsource:before { content: '\77'; } /* 'w' */
+.icon-rss:before { content: '\72'; } /* 'r' */
+.icon-api:before { content: '\61'; } /* 'a' */
+.icon-sms:before { content: '\70'; } /* 'p' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+
+
+
+
+/*frontend*/
+.icon-listcomment-close:before { content: '\63'; } /* 'c' */
+.icon-listcomment-open:before { content: '\6f'; } /* 'o' */
+.icon-pfeilconnect:before { content: '\69'; } /* 'i' */
+.icon-play-circled:before { content: '\50'; } /* 'P' */
+.icon-linkimage:before { content: '\6c'; } /* 'l' */
+
+.serviceicon_twitter:before { content: '\74'; } /* 't' */ 
+.serviceicon_facebook:before { content: '\66'; } /* 'f' */
+.serviceicon_chat:before { content: '\46'; } /* 'F' */
+.serviceicon_instagram:before { content: '\49'; } /* 'I' */
+.serviceicon_googleplus:before { content: '\67'; } /* 'g' */
+.serviceicon_mail:before { content: '\6d'; } /* 'm' */
+.serviceicon_video:before { content: '\76'; } /* 'v' */
+.serviceicon_wwwsource:before { content: '\77'; } /* 'w' */
+.serviceicon_rss:before { content: '\72'; } /* 'r' */
+.serviceicon_api:before { content: '\61'; } /* 'a' */
+
+/* muss ich das auf fontello umbennenen */
+.icon-www:before { content: '\77'; } /* 'w' */
+.serviceicon_www:before { content: '\77'; } /* 'w' */
+.serviceicon_flyphq:before { content: '\46'; } /* 'F' */
+.serviceicon_flyp:before { content: '\46'; } /* 'F' */
+
+
+  /* folgende Icons können geklickt werden */
+.icon-listcomment-close,
+.icon-listcomment-open,
+.icon-pfeilconnect, 
+.icon-play-circled,
+.icon-linkimage,
+.serviceicon_twitter,
+.serviceicon_facebook,
+.serviceicon_instagram,
+.serviceicon_googleplus,
+.serviceicon_video {
+	cursor: painter;
+}
+
+
+/* 
+.serviceicon_wwwsource,
+.serviceicon_rss,
+ */
+
+
+
+

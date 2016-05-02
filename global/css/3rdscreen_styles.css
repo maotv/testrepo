@@ -1,0 +1,753 @@
+
+/* ################ BasisDemo ################ */
+
+
+
+/* ################ Play Video in Kachel ################ */ 
+.playVideoKachelContainer {
+	z-index: 101;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -31px;
+	margin-left: -31px;
+	width:58px;
+	height:58px;
+}
+
+.playVideoKachel {
+	color: #ff6930;
+	font-size: 62px;
+	opacity: 0.6;	
+}
+.playVideoKachel:hover {
+	opacity: 1;	
+}
+
+/*    spinner animation für play video inb Kachel */
+.double-bounce1, 
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ff6930;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+
+
+
+
+
+
+/* ################ socialstream (alt) & neu: .social ################ */
+.socialstream .tile, .social {
+	color: #ffffff;
+}
+.socialstream .tile a, .social a {
+	color: #ffffff;
+}
+.socialstream .info, .social .info {
+    padding-top: 2px;
+}
+.socialstream .info span.usrhandle, .social .info span.usrhandle {
+	display: inline;
+	padding-left:1em;
+}
+.usrhandle {
+	display: block;
+}
+
+/* ################ Button - scroll to top ################ */
+
+#scrollToTopBtn {
+	width: 31px;
+	height: 90px;
+	display: none;
+	background-image: url(../assets/scroll_up.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-right: 10px;
+}
+#scrollToTopBtn:hover {
+	background-position: right bottom;
+}
+.list #scrollToTopBtn {
+	width: 41px;
+	height: 41px;
+	display: none;
+	background-image: url(../assets/scroll_up_liste.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	z-index: 5000;
+	margin-right: 15px;
+}
+.list #scrollToTopBtn:hover {
+	background-position: right top;
+}
+
+/* ################ Chatbox - Kommentareingabe chatbox und message im Overlay  ################ */
+#chatboxdummy, .overlayCommentsFormContainer {
+	background-color: #555a64; 
+	color:#F2EDE4;
+}
+#chatboxdummy .formDescription, .overlayCommentsFormContainer .formDescription{
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+.ownerbody input[type="text"] {
+	width: 220px;
+	height: 30px;
+	border: 0;
+	padding-left: 6px;
+	color: black;
+	font-size: 15px;
+	font-family: strait;
+}
+.ownerbody textarea {
+	color: black;
+	font-size: 15px;
+	font-family: strait;
+ 	max-width: 99%;
+    min-width: 99%;
+    padding: 0.4%;
+    width: 99%;
+    height:90px;
+}
+.overlayCommentsFormContainer #messageCommentForm input[type="text"] {
+	width: 88%;
+}
+.mobile .overlayCommentsFormContainer #messageCommentForm input[type="text"] {
+	width: 72%;
+}
+#messageCommentForm input[type="text"] {
+	width: 215px; /* warum brauchen wir im Overlay eine andere Breite?*/
+}
+.eLCommentsFormContainer #messageCommentForm td:first-child, 
+#chatboxdummy td:first-child  {
+	background-color: #fff;
+	border-style:solid;border-color:white;border-width:0 6px 0 6px;
+}
+.eLCommentsFormContainer #messageCommentForm td:last-child, 
+#chatboxdummy td:last-child {
+	width:52px;
+	background-color: #B1A8A2;
+}
+
+.eLCommentsFormContainer #messageCommentForm input[type="text"] {
+    width: 100%;
+    padding-left:0;
+}
+.eLCommentsFormContainer #messageCommentForm input[type="submit"] {
+	position: absolute;
+    top: 0;
+    
+}
+
+input[type="submit"] {
+	width: 52px;
+	height: 32px;
+	display: inline-block;
+	border: 0px solid white;
+	margin-left: 1px;
+	color: #ffffff;
+	font-size: 12px;
+	font-family: strait;
+	background: #b1a8a2;
+}
+
+
+/* ################ STYLE plain ################ */
+.plain { 
+	background-color: #666a73; /*grau*/ 
+	color: #f2ede4; /* beige */
+}
+.plain a { 
+	color: #f2ede4; /* beige */
+	text-decoration: underline;
+}
+/* transparenter Hinterleger */
+.plain .transparent, .plain .transparent_postcard {
+background-color: #000;
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.81) 30px, rgba(0,0,0,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(30%,rgba(0,0,0,0.81)), color-stop(100%,rgba(0,0,0,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cf000000',GradientType=0 ); */
+
+/* 	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat; */
+}
+div[type="list"] .plain .transparent, 
+div[type="list"] .plain .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .plain .connect .flypiconConnect {
+	color: #666a73;
+}
+
+/* halbtransparenter Hinterleger für listCommentCount type=list */
+.plain[layout="slideshow"] .listCommentCount {
+	background-color: rgba(0,0,0, 0.8);
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .plain .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.plain .pollEnabled {
+	background-color:rgba(255,255,255,0.2);
+}
+.plain .pollHilite {
+	background-color: #ff6930;
+}
+.plain .pollDisabled {
+	background-color:rgba(255,255,255,0.1);
+}
+
+
+
+/* ################ STYLE 1: grauer Hintergrund mit Schriftfarbe beige ################ */
+.s1 { 
+	background-color: #666a73; /*grau*/ 
+	color: #f2ede4; /* beige */
+}
+.s1 a { 
+	color: #f2ede4; /* beige */
+	text-decoration: underline;
+}
+/* transparenter Hinterleger */
+.s1 .transparent, .s1 .transparent_postcard {
+background-color: rgba(0, 0, 0, 0.5);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.81) 30px, rgba(0,0,0,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(30%,rgba(0,0,0,0.81)), color-stop(100%,rgba(0,0,0,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+
+/* 	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat; */
+}
+div[type="list"] .s1 .transparent, 
+div[type="list"] .s1 .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .s1 .connect .flypiconConnect {
+	color: #666a73;
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .s1 .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.s1 .pollEnabled {
+	background-color:rgba(255,255,255,0.2);
+}
+.s1 .pollHilite {
+	background-color: #ff6930;
+}
+.s1 .pollDisabled {
+	background-color:rgba(255,255,255,0.1);
+}
+
+
+/* ################ STYLE 2: dunkelgrauer Hintergrund mit Schriftfarbe beige ################ */
+.s2 { 
+	background-color: #2f3540; /*dunkelgrau*/ 
+	color: #f2ede4; /* beige */
+}
+.s2 a { 
+	color: #f2ede4; /* beige */
+	text-decoration: underline;	
+}
+/* transparenter Hinterleger */
+.s2 .transparent, .s2 .transparent_postcard {
+background-color: rgba(0, 0, 0, 0.5);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.81) 30px, rgba(0,0,0,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(30%,rgba(0,0,0,0.81)), color-stop(100%,rgba(0,0,0,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+
+/* 	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat; */
+}
+div[type="list"] .s2 .transparent, 
+div[type="list"] .s2 .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .s2 .connect .flypiconConnect {
+	color: #2f3540;
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .s2 .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.s2 .pollEnabled {
+	background-color:rgba(255,255,255,0.2);
+}
+.s2 .pollHilite {
+	background-color: #ff6930;
+}
+.s2 .pollDisabled {
+	background-color:rgba(255,255,255,0.1);
+}
+
+/* ################ STYLE 3: dunkelgrauer Hintergrund mit Schriftfarbe beige ################ */
+.s3 { 
+	background-color: #555a64; /*hellgrau*/ 
+	color: #f2ede4; /* beige */
+}
+.s3 a { 
+	color: #f2ede4; /* beige */
+	text-decoration: underline;
+}
+/* transparenter Hinterleger */
+.s3 .transparent, .s3 .transparent_postcard {
+background-color: rgba(0, 0, 0, 0.5);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.81) 30px, rgba(0,0,0,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(30%,rgba(0,0,0,0.81)), color-stop(100%,rgba(0,0,0,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+
+/* 	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat; */
+}
+div[type="list"] .s3 .transparent, 
+div[type="list"] .s3 .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .s3 .connect .flypiconConnect {
+	color: #555a64;
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .s3 .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.s3 .pollEnabled {
+	background-color:rgba(255,255,255,0.2);
+}
+.s3 .pollHilite {
+	background-color: #ff6930;
+}
+.s3 .pollDisabled {
+	background-color:rgba(255,255,255,0.1);
+}
+
+
+/* ################ STYLE 4: beiger Hintergrund mit Schriftfarbe grau */
+.s4 { 
+	background-color: #f2ede4; /*beige*/ 
+	color: #666a73; /* grau */
+}
+.s4 a { 
+	color: #666a73; /* grau */
+	text-decoration: underline;
+}
+/* transparenter Hinterleger */
+.s4 .transparent, .s4 .transparent_postcard {
+background-color: rgba(255,255,255,0.5);
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.81) 30px, rgba(255,255,255,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+
+/*	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;*/
+}
+div[type="list"] .s4 .transparent, 
+div[type="list"] .s4 .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .s4 .connect .flypiconConnect {
+	color: #f2ede4;
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .s4 .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.s4 .pollEnabled {
+	background-color:rgba(0,0,0,0.2);
+}
+.s4 .pollHilite {
+	background-color: #ff6930;
+	color:#f2ede4;
+}
+.s4 .pollDisabled {
+	background-color:rgba(0,0,0,0.1);
+}
+
+
+/* ################ STYLE 5: dunkelbeiger Hintergrund mit Schriftfarbe grau ################ */
+.s5 { 
+	background-color:  #d9d1c7; /*dunkelbeige*/
+	color: #666a73; /* grau */
+}
+.s5 a { 
+	color: #666a73; /* grau */
+	text-decoration: underline;
+}
+
+/* transparenter Hinterleger */
+.s5 .transparent, .s5 .transparent_postcard {
+background-color: rgba(255,255,255,0.5);
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.81) 30px, rgba(255,255,255,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+
+/*	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;*/
+}
+div[type="list"] .s5 .transparent, 
+div[type="list"] .s5 .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .s5 .connect .flypiconConnect {
+	color: #d9d1c7;
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .s5 .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.s5 .pollEnabled {
+	background-color:rgba(0,0,0,0.2);
+}
+.s5 .pollHilite {
+	background-color: #ff6930;
+	color:#f2ede4;
+}
+.s5 .pollDisabled {
+	background-color:rgba(0,0,0,0.1);
+	
+}
+
+
+
+/* ################ STYLE 6: hellblauer Hintergrund mit Schriftfarbe dunkelgrau ################ */
+.s6 { 
+	background-color: #bcd3e7; /*hellblau*/
+	color: #2f3540; /* dunkelgrau */
+}
+.s6 a { 
+	color: #2f3540; /* dunkelgrau */
+	text-decoration: underline;
+}
+/* transparenter Hinterleger */
+.s6 .transparent, .s6 .transparent_postcard {
+background-color: rgba(255,255,255,0.5);
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.81) 30px, rgba(255,255,255,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+
+/*	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;*/
+}
+div[type="list"] .s6 .transparent, 
+div[type="list"] .s6 .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .s6 .connect .flypiconConnect {
+	color: #bcd3e7;
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .s6 .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.s6 .pollEnabled {
+	background-color:rgba(0,0,0,0.2);
+}
+.s6 .pollHilite {
+	background-color: #ff6930;
+	color:#f2ede4;
+}
+.s6 .pollDisabled {
+	background-color:rgba(0,0,0,0.1);
+}
+
+
+/* ################ STYLE 7: brauner Hintergrund mit Schriftfarbe dunkelgrau ################ */
+.s7 { 
+	background-color: #8c8681; /*braun*/
+	color: #F2EDE4; /* beige */
+}
+.s7 a { 
+	color: #F2EDE4; /* beige */
+	text-decoration: underline;
+}
+/* transparenter Hinterleger */
+.s7 .transparent, .s7 .transparent_postcard {
+background-color: rgba(0, 0, 0, 0.5);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.81) 30px, rgba(0,0,0,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(30%,rgba(0,0,0,0.81)), color-stop(100%,rgba(0,0,0,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.81) 30px,rgba(0,0,0,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+
+/* 	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat; */
+}
+div[type="list"] .s7 .transparent, 
+div[type="list"] .s7 .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .s7 .connect .flypiconConnect {
+	color: #8c8681;
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .s7 .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.s7 .pollEnabled {
+	background-color:rgba(255,255,255,0.2);
+}
+.s7 .pollHilite {
+	background-color: #ff6930;
+	color:#f2ede4;
+}
+.s7 .pollDisabled {
+	background-color:rgba(255,255,255,0.1);
+}
+
+
+/* ################ STYLE 7: brauner Hintergrund mit Schriftfarbe dunkelgrau ################ */
+.s8 { 
+	background-color: #b1a8a2; /*mittelbraunbeige*/
+	color: #2f3540; /* dunkelgrau */
+}
+.s8 a { 
+	color: #2f3540; /* dunkelgrau */
+	text-decoration: underline;	
+}
+/* transparenter Hinterleger */
+.s8 .transparent, .s8 .transparent_postcard {
+background-color: rgba(255,255,255,0.5);
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.81) 30px, rgba(255,255,255,0.91) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.91))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+
+/*	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;*/
+}
+div[type="list"] .s8 .transparent, 
+div[type="list"] .s8 .transparent_postcard {
+	background-image: none;
+}
+div[type="list"] .s8 .connect .flypiconConnect {
+	color: #b1a8a2;
+}
+/* transparenter Hinterleger auf dem banner */
+.banner .s8 .transparent {
+	background-image: none;
+}
+/* pollfarben */
+.s8 .pollEnabled {
+	background-color:rgba(0,0,0,0.2);
+}
+.s8 .pollHilite {
+	background-color: #ff6930;
+	color:#f2ede4;
+}
+.s8 .pollDisabled {
+	background-color:rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+#overlaySocialstreamContainer a.userhandle {
+	/* color:#1877B1 */
+}
+
+
+
+
+/* ################ E 1: ################ */
+.e1 {
+	color:#000;
+	background-color: #dbdbdb;
+}
+.e1 a {
+	color:#000;
+	text-decoration: underline;
+}
+.dragdrop #secondColumn .e1 {
+	background-size:auto 77%;
+}
+/* transparenter Hinterleger */
+.e1 .transparent, .e1 .transparent_postcard {
+	background-color: rgba(255,255,255,0.5);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.81) 30px, rgba(255,255,255,0.91) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.91))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+}
+div[type="list"] .e1 .connect .flypiconConnect {
+	color: #dbdbdb;
+}
+
+
+
+/* ################ E 2: ################ */
+.e2 {
+	color:#000;
+	background-color: #dbdbdb;
+}
+.e2 a {
+	color:#000;
+	text-decoration: underline;
+}
+.dragdrop #secondColumn .e2 {
+	background-size:auto 77%;
+}
+.e2 .transparent, .e2 .transparent_postcard {
+	background-color: rgba(255,255,255,0.5);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.81) 30px, rgba(255,255,255,0.91) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.91))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+}
+div[type="list"] .e2 .connect .flypiconConnect {
+	color: #dbdbdb;
+}
+
+
+
+/* ################ E 3: ################ */
+.e3 {
+	color:#000;
+	background-color: #dbdbdb;
+}
+.e3 a {
+	color:#000;
+	text-decoration: underline;
+}
+.dragdrop #secondColumn .e3 {
+	background-size:auto 77%;
+}
+.e3 .transparent, .e3 .transparent_postcard {
+	background-color: rgba(255,255,255,0.5);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.81) 30px, rgba(255,255,255,0.91) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.91))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+}
+div[type="list"] .e3 .connect .flypiconConnect {
+	color: #dbdbdb;
+}
+
+
+
+/* ################ E 4: ################ */
+.e4 {
+	color:#000;
+	background-color: #dbdbdb;
+}
+.e4 a {
+	color:#000;
+	text-decoration: underline;
+}
+.dragdrop #secondColumn .e4 {
+	background-size:auto 77%;
+}
+.e4 .transparent, .e4 .transparent_postcard {
+	background-color: rgba(255,255,255,0.5);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.81) 30px, rgba(255,255,255,0.91) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.91))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.81) 30px,rgba(255,255,255,0.91) 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#cf000000',GradientType=0 );  IE6-9 */
+}
+div[type="list"] .e4 .connect .flypiconConnect {
+	color: #dbdbdb;
+}
+/* ################ flypicon link auszeichnung überschreiben ################ */
+
+.text a.flypicon {
+	text-decoration: none;
+}
+.textbig a.flypicon {
+	text-decoration: none;
+	font-size: 26px;
+}
+.social a.flypicon {
+	text-decoration: none;
+	font-size: 15px;
+}
+
+
+div[type="list"] .tile .transparent, 
+div[type="list"] .tile .transparent_postcard {
+	background-image: none;
+}
+

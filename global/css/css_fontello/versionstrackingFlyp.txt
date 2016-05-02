@@ -1,0 +1,19 @@
+20150713_fontello-64ad5a2b_frontend only 13
+
+
+Die Font-Dateien wurden getrennt. Im Frontend werden nur frontend icons gespeichert. 
+Aktueller Stand:
+
+F icon-flypsite
+I icon-instagram
+P icon-play-circled
+c icon-listcomment-close
+f icon-facebook
+g icon-googleplus
+i icon-pfeilconnect
+l icon-linkimage
+m icon-mail
+o icon-listcomment-open
+r icon-rss
+t icon-twitter
+w icon-wwwsource

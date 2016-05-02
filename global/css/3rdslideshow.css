@@ -1,0 +1,211 @@
+
+div[type="list"] .slideshow .tile[layout="image"] .info, 
+div[type="list"] .slideshow .tile[layout="image"] .text,
+div[type="list"] .slideshow .tile[layout="postcard"] .info, 
+div[type="list"] .slideshow .tile[layout="postcard_text"] .info{
+	bottom:0px;
+	padding-bottom: 12px;
+}
+
+div[type="list"] .slideshow .tile[layout="image"] .info, 
+div[type="list"] .slideshow .tile[layout="image"] .text {
+	bottom: 0px;
+	padding-bottom: 12px;
+	width:100%;
+	position: absolute;
+}
+
+
+div[type="list"] .slideshow .tile .info,
+div[type="list"] .slideshow .tile.slide .link {
+	font-size: 13px;
+	position:absolute;
+	padding-top:0px;
+	bottom:15px;
+	width:100%;	
+}
+
+
+div[type="list"] .slideshow .tile[layout="text"] .info  span, 
+div[type="list"] .slideshow .tile[layout="text_big"] .info  span,
+div[type="list"] .slideshow .tile[layout="time"] .info  span,
+div[type="list"] .slideshow .tile[layout="text_small"] .info  span,
+div[type="list"] .slideshow .tile[layout="text_link"] .link a,
+div[type="list"] .slideshow .tile[layout="image_link"] .link a,
+div[type="list"] .slideshow .tile[layout="message"] span, 
+div[type="list"] .slideshow .tile[layout="message_big"] span /*,
+div[type="list"] .slideshow .tile[layout="postcard_text"] span*/ {
+	padding: 20px 20px 0px 20px;
+	display: block;
+}
+
+
+div[type="list"] .slideshow .slide .transparent span .usrhandle,
+div[type="list"] .slideshow .tile[layout="message"] span .usrhandle, 
+div[type="list"] .slideshow .tile[layout="message_big"] span .usrhandle,
+div[type="list"] .slideshow .tile[layout="postcard_text"] span .usrhandle {
+	padding: 0px;
+}
+
+
+div[type="list"] .slideshow .transparent .serviceicon,
+div[type="list"] .slideshow .transparent_postcard .serviceicon {
+	bottom: 15px;
+}
+
+
+div[type="list"] .slideshow .serviceicon {
+	bottom:0px;
+}
+
+
+div[type="list"] .slideshow .tile[layout="image"] .tilecontent, 
+div[type="list"] .slideshow .tile[layout="postcard"] .tilecontent, 
+div[type="list"] .slideshow .tile[layout="postcard_text"] .tilecontent {
+	display:block;
+}
+
+div[type="list"] .slideshow .tile[layout="postcard"] .info, 
+div[type="list"] .slideshow .tile[layout="postcard_text"] .info {
+	bottom: 0;
+	padding: 12px 0;
+}
+
+div[type="list"] .slideshow .tile .text {
+	margin-bottom: 0;
+}
+
+div[type="list"] .slideshow .connect {
+	margin-top: -18px;
+}
+
+/* ###################### STYLES aus 3rdscreen_styles.css ###################### */
+
+div[type="list"] .slide.plain .transparent, 
+div[type="list"] .slide.plain .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat;
+
+}
+div[type="list"] .slide.plain .connect .flypiconConnect {
+	color: #f2ede4;
+}
+div[type="list"] .slide.plain a { 
+	color: #f2ede4; /* beige */
+	text-decoration: none;
+}
+
+
+div[type="list"] .s1.slide .transparent, 
+div[type="list"] .s1.slide .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat;
+}
+div[type="list"] .s1.slide .connect .flypiconConnect {
+	color: #f2ede4;
+}
+div[type="list"] .s1.slide a { 
+	color: #f2ede4; /* beige */
+	text-decoration: none;
+}
+
+
+div[type="list"] .slide.s2 .transparent, 
+div[type="list"] .slide.s2 .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat;
+}
+div[type="list"] .slide.s2 .connect .flypiconConnect {
+	color: #2f3540;
+}
+div[type="list"] .slide.s2 a { 
+	color: #f2ede4; /* beige */
+	text-decoration: underline;	
+}
+
+
+div[type="list"] .slide.s3 .transparent, 
+div[type="list"] .slide.s3 .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcarddunkel.png);
+	background-repeat:repeat;
+}
+div[type="list"] .slide.s3 .connect .flypiconConnect {
+	color: #f2ede4;
+}
+div[type="list"] .slide.s3 a { 
+	color: #f2ede4; /* beige */
+	text-decoration: none;
+}
+
+
+div[type="list"] .slide.s4 .transparent, 
+div[type="list"] .slide.s4 .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;
+}
+div[type="list"] .slide.s4 .connect .flypiconConnect {
+	color: #666a73;
+}
+div[type="list"] .slide.s4 a { 
+	color: #666a73; /* grau */
+	text-decoration: none;
+}
+
+
+div[type="list"] .slide.s5 .transparent, 
+div[type="list"] .slide.s5 .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;
+}
+div[type="list"] .slide.s5 .connect .flypiconConnect {
+	color: #666a73;
+}
+div[type="list"] .slide.s5 a { 
+	color: #666a73; /* grau */
+	text-decoration: none;
+}
+
+
+div[type="list"] .slide.s6 .transparent, 
+div[type="list"] .slide.s6 .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;
+}
+div[type="list"] .slide.s6 .connect .flypiconConnect {
+	color: #2f3540;
+}
+div[type="list"] .slide.s6 a { 
+	color: #2f3540; /* dunkelgrau */
+	text-decoration: none;
+}
+
+
+div[type="list"] .slide.s7 .transparent, 
+div[type="list"] .slide.s7 .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;
+}
+div[type="list"] .slide.s7 .connect .flypiconConnect {
+	color: #2f3540;
+}
+div[type="list"] .slide.s7 a { 
+	color: #2f3540; /* dunkelgrau */
+	text-decoration: none;
+}
+
+
+div[type="list"] .slide.s8 .transparent, 
+div[type="list"] .slide.s8 .transparent_postcard {
+	background-image: url(../assets/unterlegerpostcardhell.png);
+	background-repeat:repeat;
+}
+div[type="list"] .slide.s8 .connect .flypiconConnect {
+	color: #2f3540;
+}
+div[type="list"] .slide.s8 a { 
+	color: #2f3540; /* dunkelgrau */
+	text-decoration: none;	
+}
+
+
+

@@ -1,0 +1,156 @@
+body{
+	/*font-family:Strait, sans-serif;*/
+	font-family:'PT Mono', sans-serif;
+	font-size: 18px;
+	height:100%;
+	bottom:0;
+	top:0;
+	width:100%;
+	background-color:mintcream;
+}
+#messagelist {
+	width:470px;
+	position:absolute;
+	top:240px;
+	height:500px;
+	overflow-y:scroll;
+	border: 5px solid transparent;
+}
+.msg {
+	background-color:black;
+	color:white;
+	cursor:pointer;
+	margin-bottom:8px;
+	padding-left:20px;
+	width:430px;
+}
+#messagelist .txt, #editor .txt {
+	padding:6px;
+	border:0;
+}
+#messagelist .usr, .editor .usr {
+	display:block;
+	background-color:black;
+	color: yellow;
+	padding-left:0px;
+}
+
+#editor {
+	width:450px;
+	position:absolute;
+	top:20px;
+	height:180px;
+	margin:auto;
+	border: 5px solid gray;
+	background:#efefef;
+}
+.editor .msg {
+	position:absolute;
+	bottom:0;
+	margin:0;
+}
+
+.editor .usr {
+	position:relative;
+}
+
+.editor .msgstatus {
+	display:none;
+	position:absolute;
+	right:2px;
+	top:2px;
+	width:16px;
+	height:16px;
+	background-color: transparent;
+	border-radius:50%;
+}
+
+#publishedContainer {
+	width:450px;
+	position:absolute;
+	top:300px;
+	left:530px;
+	height:180px;
+	border:5px solid #aaccaa;
+	background-color: #eeffee;
+}
+
+
+
+#buttons {
+	width:360px;
+	position:absolute;
+	top:10px;
+	left:520px;
+	height:180px;
+}
+.btn {
+	float:left;
+	width:96px;
+	height:96px;
+	background-color: #fff;
+	border:1px solid black;
+	margin:10px 10px ;
+	position:relative;
+	text-align:center;
+}
+.btn.small {
+	height:46px;
+}
+
+#editing {
+	border:1px solid red;
+	margin:10px;
+	width:332px;
+	float:left;
+	display:none;
+	background-color:gold;
+	text-align:center;
+	padding-top:8px 0 8px 0;
+}
+
+.bottom{
+	position:absolute;
+	bottom:0;
+	background-color:black;
+	color:white;
+	width:100%;
+	font-size: 18px;
+}
+#queuecount, #listcount, #history {
+	text-align: center;
+	font-size: 28px;
+}
+#countm, #counth, #countq {
+  padding-top:20px;
+}
+#feedback {
+	position:absolute;
+	right:0px;
+	top:0;
+	margin:auto;
+	text-align:right;
+}
+
+
+#worker {
+	position:absolute;
+	right:0px;
+	top:40px;
+	margin:auto;
+	padding-right:20px;
+	text-align:right;
+	display:none;
+}
+
+
+.topleft, .bottomright {
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.6em;
+}
+
+.editing {
+	background-color:green;
+}
+
+

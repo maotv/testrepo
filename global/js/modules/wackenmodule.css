@@ -1,0 +1,245 @@
+iframe.flypsiteFrame {max-width: 1200px;}
+
+#fxContainer {
+	background: #2d2d2d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2d2d2d 0%, #0e0111 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d2d2d), color-stop(100%,#0e0111)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2d2d2d 0%,#0e0111 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2d2d2d 0%,#0e0111 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2d2d2d 0%,#0e0111 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2d2d2d 0%,#0e0111 100%); /* W3C */
+	width:100%;
+	height:462px;
+	margin-bottom: 15px;
+	visibility:hidden;
+	overflow:hidden;
+}
+.bigBox {
+	width:66.9%;
+	height:100%;
+	float:left;
+	padding:9px 8px 9px 9px;
+}
+.smallBox {
+	width:33.1%;
+	height:100%;
+	float:left;
+	padding:9px 9px 9px 6px;
+	cursor:pointer;
+}
+
+.smallBox ul.flypContainer li {
+	/*height:50%;
+	width:100%;*/
+}
+
+
+@media (max-width: 640px) {
+	#fxContainer {
+		width:100%;
+		height:auto;
+		margin-bottom: 15px;
+	}
+	.bigBox {
+		width:100%;
+		height:320px;
+		float:none;
+		padding:5px;
+	}
+	.smallBox {
+		width:100%;
+		height:auto;
+		max-height: 150px;
+		float:none;
+		padding:5px;
+		cursor:pointer;
+		display:inline-block;
+	}
+	.smallBox:after {
+		clear:both;
+	}
+	
+	.smallBox ul.flypContainer li {
+		/*display:inline;
+		height:100%;
+		width:50%;*/
+	}
+
+}
+
+ul.flypContainer .playVideoButton {
+  	color: #ff6930;
+  	opacity: 0.6;
+	margin: 28% 50%;
+	margin: calc(50% - 33px)  calc(50% - 33px);
+	width:66px;
+	height:66px;
+}
+ul.flypContainer .playVideoButton:hover {
+	opacity: 1;
+}
+ul.flypContainer .playVideoButton.flypicon {
+	font-size: 62px;
+}
+ul.flypContainer .playVideoButtonContainer{
+  	top: 0;
+  	margin: 0 auto;
+  	z-index:2;
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+/* ##############################
+minimal flypcontainer styles 
+################################# */
+
+
+ul.flypContainer  { 
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+		
+.flypParent {
+	font-family: Strait,sans-serif;
+	/* background:black; */
+	word-wrap: break-word;
+	overflow:hidden;
+	position:relative;
+	top: 0px;
+	left: 0;
+	width:100%;
+	height: 100%;
+}
+
+.mobile .flypParent {
+	top:0;
+	left:0px;
+	width:100%;
+	height: 100%;
+}
+.flypContainer {
+	width:100%;
+	height:100%;
+}
+
+.flypContainer a {
+	text-decoration: none;
+	color: #e20026;
+}
+
+.flypContainer p {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+.flypContainer ul {
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+	width:100%;
+	list-style:none;
+	line-height:1;
+	/* background-color:#000; */
+}
+.flypContainer li {
+	list-style-type:none;
+	list-style-position:inside;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	color:#fff;
+	color:rgba(255,255,255,0.95);
+	display:block;
+	
+	background:#000000;
+	background: #2d2d2d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2d2d2d 0%, #0e0111 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d2d2d), color-stop(100%,#0e0111)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2d2d2d 0%,#0e0111 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2d2d2d 0%,#0e0111 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2d2d2d 0%,#0e0111 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2d2d2d 0%,#0e0111 100%); /* W3C */
+	
+	position: absolute; 
+	top: 0px;
+
+}
+.flypContainer li > * {
+	overflow:hidden;
+	display:block;
+}
+.flypContainer li content {
+	display:block;
+	font-size:10em;
+	line-height:1.1em;
+	text-align:center;
+}
+.flypContainer li content p {
+	margin:0.6em;
+}
+.flypContainer li content img {
+	width:100%;
+	height:100%;
+}
+.flypContainer li header p, .flypContainer li footer p {
+	/* width:96%; */
+	height:96%;
+	padding:2%;
+	padding:2% 15px;
+	display:block;
+}
+.flypContainer li header p > *, .flypContainer li footer p > *{
+	float:left;
+	display:inline;
+	margin:0;
+	line-height:1.1em;
+}
+.flypContainer li header p img, .flypContainer li footer p img {
+	height:1.8em;
+	width: auto !important;
+	margin-right:2%;
+	border-radius:50%;
+}
+.flypContainer li * p span.name,.flypContainer li * p span.handle {
+	/* font-weight:700; */
+}
+.flypContainer li * p span.time,.flypContainer li * p span.service {
+	padding-right:0.5em;
+	float:right;
+}
+.flypContainer li * p span.flypiconBig {
+	float:right;
+	/* width:10%; */
+}
+.flypContainer li * p span.flypiconBig:before {
+	font-size:inherit;
+}
+.flypContainer li * p span.handle:before {
+}
+.flypContainer li * p span.name{
+	padding-right:0.6em;
+}
+.flypContainer li * p span.service:before {
+	content:"via";
+	padding:0 5px;
+}
+
+.flypContainer li footer {
+	bottom: 0;
+    position: absolute;
+    background: transparent; /*rgba(0,0,0,0.7);*/
+    width:100%;
+}
+
+.flypContainer .s1, .flypContainer .s5, .flypContainer .e1, .flypContainer .e5, .flypContainer .s2, .flypContainer .s6, .flypContainer .e2, .flypContainer .e6, .flypContainer .s3, .flypContainer .s7, .flypContainer .e3, .flypContainer .e7, .flypContainer .s4, .flypContainer .s8, .flypContainer .e4, .flypContainer .e8 {
+    /* background-color:#111; */
+    color:#fff;    
+}
+
+
+
